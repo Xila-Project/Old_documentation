@@ -47,7 +47,7 @@ extensions = [
 
 myst_enable_extensions = [
     "amsmath",
-    "attrs_inline",
+  #  "attrs_inline",
     "colon_fence",
     "deflist",
     "dollarmath",
@@ -76,7 +76,7 @@ source_suffix = {
 myst_number_code_blocks = ["cpp"]
 myst_heading_anchors = 3
 
-html_favicon = 'color.svg'
+html_favicon = 'Assets/Images/Xila/Color/Color.svg'
 
 # Breathe configuration
 
@@ -99,12 +99,16 @@ exclude_patterns = []
 #
 html_theme = 'sphinx_book_theme'
 html_logo = 'Xila.png'
+html_context = {
+    "default_mode": "dark",
+}
 html_theme_options = {
-
+     "repository_url": "https://github.com/Xila-Project",
+    "use_repository_button": True,
 }
 
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+# html_static_path = ['_static']

@@ -6,9 +6,38 @@ Here you will find a full description of the drive abstraction layer.
 
 This module is an abstranction layer for the drive and its file system.
 
+It uses the type `Drive_Types::File_Class` 
+
 ## Example
 
 ```cpp
+    using namespace Xila;
+    using namespace Drive_Types;
+
+    File_Type File = Drive.Open("/Test.txt", true)
+
+    if (!File)
+    {
+        // Do something if the file can't be opened.
+    }
+
+    File.Set_Position(0);
+    File.Write_String("Hello world !");
+
+    Drive.Make_Directory("/Folder");
+
+    File_Type Folder = Drive.Open("/Folder", true);
+
+    if (!Folder)
+    {
+        // Do something if the folder can't be opened.
+    }
+
+
+
+
+
+
     Xila_Namespace::Drive_Class::Sd_Card_Type Card_Type = Xila.Drive.Type();    // -- Get card type.
     uint64_t Card_Size = Xila.Drive.Size();     // -- Get card size.
     uint64_t Available_Bytes = Xila.Drive.Total_Bytes();    // -- Get current partition available space.
@@ -31,6 +60,9 @@ This module is an abstranction layer for the drive and its file system.
 ## API reference
 
 ```{eval-rst}
+.. doxygenclass::  Xila_Namespace::Drive_Types::File_Class
+    :members:
+
 .. doxygenclass::   Xila_Namespace::Drive_Class
     :members:
 ```

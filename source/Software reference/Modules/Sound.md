@@ -31,7 +31,9 @@ The sound module is using the following types :
 ```{toctree}
     :maxdepth: 1
 
-Sound/I2S_Stream
+Sound/I2S
+
+```
 
 
 

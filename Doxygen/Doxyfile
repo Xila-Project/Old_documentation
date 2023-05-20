@@ -863,7 +863,7 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = "./Code/lib/Xila/include" "../../Code/lib/Xila/src"
+INPUT                  =    "./Code/lib/Xila/include" "./Code/lib/Xila/src" "./Code/lib/Berry/include" "./Code/lib/Berry/src" "./Code/lib/File_Manager/include" "./Code/lib/File_Manager/src" "./Code/lib/Preferences/include" "./Code/lib/Preferences/src" "./Code/lib/Shell/include" "./Code/lib/Shell/src" 
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses

@@ -1,3 +1,6 @@
 [submodule "Doxygen/Code"]
 	path = Doxygen/Code
 	url = https://github.com/Xila-Project/Code
+[submodule "source/Assets"]
+	path = source/Assets
+	url = https://github.com/Xila-Project/Assets
