@@ -103,8 +103,8 @@ html_context = {
     "default_mode": "dark",
 }
 html_theme_options = {
-     "repository_url": "https://github.com/Xila-Project",
-    "use_repository_button": True,
+   #  "repository_url": "https://github.com/Xila-Project",
+   # "use_repository_button": True,
 }
 
 
