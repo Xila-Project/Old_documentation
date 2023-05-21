@@ -2,13 +2,13 @@
 
 Here you will find a full description of the display abstraction layer.
 
-## Description
+## 👓 Overview
 
 This abstraction layer is responsible to drive the display.
 In addition, this API supports resource protection to avoid data collisions when sending information.
 This API rest upon the Nextion Library. For the full API, please visit the library page.
 
-## Example
+## 💡 Example
 
 ```cpp
     using namespace Xila;
@@ -21,7 +21,7 @@ This API rest upon the Nextion Library. For the full API, please visit the libra
     Xila.Display.Sleep();   // -- Turn off the display.
 ```
 
-## API reference
+## 📚 API reference
 
 ```{eval-rst}
 .. doxygenclass::   Xila_Namespace::Display_Class

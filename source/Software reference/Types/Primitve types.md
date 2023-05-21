@@ -2,7 +2,7 @@
 
 Xila provides a set of primitive types, which are defined in `Xila` namespace.
 
-## Description
+## 👓 Overview
 
 ### Fixed data types
 
@@ -56,7 +56,7 @@ Xila provides a set of primitive types, which are defined in `Xila` namespace.
 | `Character_Type` | 1 byte |
 | `Result_Type` | 1 byte |
 
-## Example
+## 💡 Example
 
 ```cpp
     using namespace Xila;             // - - Import Xila namespace.

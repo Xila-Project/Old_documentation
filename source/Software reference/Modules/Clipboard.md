@@ -5,9 +5,9 @@ Here you will find a full description of the clipboard API.
 This module is responsible to allow copy / paste feature.
 It only offers an API, the graphical implementation remains the responsibility of the software.
 
-## Description
+## 👓 Overview
 
-## Examples
+## 💡 Examples
 
 ```cpp
     using namespace Xila;
@@ -26,7 +26,7 @@ It only offers an API, the graphical implementation remains the responsibility o
     }
 ```
 
-## API reference
+## 📚 API reference
 
 ```{eval-rst}
 .. doxygenclass::   Xila_Namespace::Clipboard_Class

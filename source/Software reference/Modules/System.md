@@ -1,12 +1,12 @@
-#  System
+# ⚙️ System
 
 Here you will find a full description of the system module.
 
-## Description
+## 👓 Overview
 
 The `System` module is responsible to coordinate the other modules and to provide system related operations and information.
 
-## Example
+## 💡 Example
 
 ```cpp
     using namespace Xila;
@@ -14,7 +14,7 @@ The `System` module is responsible to coordinate the other modules and to provid
     System
 ```
 
-## API reference
+## 📚 API reference
 
 ```{eval-rst}
 .. doxygenclass::   Xila_Namespace::System_Class

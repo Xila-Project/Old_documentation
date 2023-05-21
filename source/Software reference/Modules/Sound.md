@@ -2,7 +2,7 @@
 
 Here you will find a full description of the sound abstraction layer.
 
-## Overview
+## 👓 Overview
 
 Sound is a module that allows to play multiples streams of audio to multiples outputs. It is using [Arduino Audio Tools](https://github.com/pschatzmann/arduino-audio-tools) library from [Phil Schatzmann](http://pschatzmann.ch/).
 
@@ -37,7 +37,7 @@ Sound/I2S
 
 
 
-## Example
+## 💡 Example
 
 ```cpp
     using namespace Xila_Namespace;
@@ -66,7 +66,7 @@ Sound/I2S
     Xila.Sound.Tone();                                          // -- Disable tone.
 ```
 
-## API reference
+## 📚 API reference
 
 ```{eval-rst}
 .. doxygenclass::   Xila_Namespace::Sound_Class

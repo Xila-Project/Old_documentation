@@ -1,8 +1,10 @@
 # 🚀 Get started
 
-Here you will find how to get started with Xila hardware and software.
+Here you will find how to get started with Xila.
 
 ```{toctree}
-Developpment
+    :maxdepth: 1
 Use
+Developpment
+Contributing
 ```

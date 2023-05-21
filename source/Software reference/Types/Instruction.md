@@ -2,11 +2,11 @@
 
 Here you will find a full description of the `Instruction_Type`.
 
-## Description
+## 👓 Overview
 
 To allow `Modules` and `Software` to communicate with each other, Xila uses `Queue` systems. These allow you to send and receive data asynchronously. In order to have a standard format during this communication, the `Instruction_Type` type has been defined.
 
-## Example
+## 💡 Example
 
 ```cpp
     void My_Software::Main_Task(void*)
@@ -27,7 +27,7 @@ To allow `Modules` and `Software` to communicate with each other, Xila uses `Que
     }
 ```
 
-## API reference
+## 📚 API reference
 
 ```{eval-rst}
 .. doxygentypedef:: Xila_Namespace::Instruction_Type

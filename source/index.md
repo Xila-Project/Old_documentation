@@ -31,7 +31,7 @@ Hardware reference/Reference kit
    :caption:   ℹ️ About
    :maxdepth:  2
 
-About/Changelog
+About/Change log
 About/Roadmap
 About/License
 About/Credits

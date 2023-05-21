@@ -2,11 +2,11 @@
 
 Here you will find a full description of the GPIO library.
 
-## Description
+## 👓 Overview
 
 The GPIO library is a wrapper for the Arduino implementation of the GPIO.
 
-## Example
+## 💡 Example
 
 ```cpp
     void Interrupt_Handler()
@@ -29,7 +29,7 @@ The GPIO library is a wrapper for the Arduino implementation of the GPIO.
     }
 ```
 
-## API reference
+## 📚 API reference
 
 ```{eval-rst}
 .. doxygenclass::   Xila_Namespace::Pin_Class

@@ -2,25 +2,31 @@
 
 Here you will find a full description of the software management API.
 
+## 👓 Overview
+
 This module is responsible for everything related to software management, such as loading, minimization, closing, watchdog etc.
 
 It's using `Softwares_Types::Software_Type` 
 
-## API reference
+## Types
 
-```{eval-rst}
-.. doxygenclass::  Xila_Namespace::Softwares_Types::Software_Class
-    :members:
+Softwares module is using the following types :
 
-.. doxygenclass::  Xila_Namespace::Softwares_Types::Software_Handle_Class
-    :members:
+:::{toctree}
+Softwares/Software Handle
+Softwares/Software
+:::
 
-.. doxygenclass::   Xila_Namespace::Softwares_Class
-    :members:
-```
-
-## Example
+## 💡 Example
 
 ```cpp
     
+```
+
+## 📚 API reference
+
+```{eval-rst}
+
+.. doxygenclass::   Xila_Namespace::Softwares_Class
+    :members:
 ```

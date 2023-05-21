@@ -1,8 +1,8 @@
-#  Flash
+# ⚡️ Flash
 
 Here you will find a full description of the flash abstraction layer.
 
-## Example
+## 💡 Example
 
 ```cpp
 
@@ -23,7 +23,7 @@ Here you will find a full description of the flash abstraction layer.
         // -- Do stuff when the operation succeed.
     } 
 ```
-## API reference
+## 📚 API reference
 
 ```{eval-rst}
 .. doxygenclass::   Xila_Namespace::Flash_Class

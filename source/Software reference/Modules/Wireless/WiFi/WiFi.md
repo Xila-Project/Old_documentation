@@ -2,7 +2,7 @@
 
 Here you will find a complete description of the WiFi abstraction layer.
 
-## Description
+## 👓 Overview
 
 Xila provides a WiFi abstraction layer to simplify the use of WiFi. It is based on the ESP32 WiFi library for Arduino.
 It's composed of 3 sub-modules: `Station`, `Access Point` and `Scan`.
@@ -14,7 +14,7 @@ Here are the types defined in the namespace `WiFi_Types` and used by `WiFi` modu
 WiFi/IP Address
 ```
 
-## Example
+## 💡 Example
 
 ```cpp
     using namespace Xila;
@@ -28,7 +28,7 @@ WiFi/IP Address
     
 ```
 
-## API reference
+## 📚 API reference
 
 ```{eval-rst}
 .. doxygenclass::   Xila_Namespace::WiFi_Class

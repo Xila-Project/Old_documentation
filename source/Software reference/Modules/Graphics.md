@@ -2,7 +2,7 @@
 
 Here is the full description of the Graphics module. 
 
-## Description
+## 👓 Overview
 
 It is a dumb C++ wrapper for LVGL (a free and open-source graphics library for embedded devices) with additional features.
 It allows the developer to create complex graphic interface with ease.
@@ -14,7 +14,7 @@ It allows the developer to create complex graphic interface with ease.
 
 It depends on the `Display` module.
 
-## Example
+## 💡 Example
 
 ```cpp
     using namespace Xila;
@@ -31,6 +31,6 @@ It depends on the `Display` module.
     Object.Set_Alignment(Alignment_Type::Center, 0, 10);
 ```
 
-## API reference
+## 📚 API reference
 
 Since it's mainly a wrapper and the library is huge, the documentation is supplied here (maybe later). Please refer to the [LVGL documentation](https://docs.lvgl.io/master/) for more information. 

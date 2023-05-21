@@ -1,6 +1,6 @@
 # 📅 `Date_Type` / `Time_Type`
 
-## Description
+## 👓 Overview
 
 In order to simplify the use of dates and times, Xila has defined two types: `Date_Type` and `Time_Type`.
 
@@ -8,7 +8,7 @@ In order to simplify the use of dates and times, Xila has defined two types: `Da
     `Date_Type` is an alias of `Date_Class` and `Time_Type` is an alias of `Time_Class`.
 :::
 
-## Example
+## 💡 Example
 
 ```cpp
 using namespace Xila_Class;
@@ -39,7 +39,7 @@ if (Date_1 != Date_2)   // - Check if dates are different.
 
 ```
 
-## API reference
+## 📚 API reference
 
 ```{eval-rst}
 .. doxygenclass:: Xila_Namespace::Date_Class

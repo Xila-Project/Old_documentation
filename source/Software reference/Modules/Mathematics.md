@@ -1,19 +1,21 @@
-# ✖️ Mathematics
+# 🧮 Mathematics
 
-Here you will find a full description of the mathematics module.
+Here you will find a full description of the `Mathematics` module.
 
-This module is responsible for everything related to mathematics.
-It supports a large majority of mathematical functions.
-Thus, almost any calculations can be performed using this module.
+## 👓 Overview
 
-## API reference
+This module is responsible for everything related to mathematics. It supports a large majority of mathematical functions. Thus, almost any calculations can be performed using this module.
 
-```{eval-rst}
-.. doxygenclass::   Xila_Namespace::Mathematics_Class
-    :members:
+## Types
+
+`Mathematics` is using the following types :
+
+```{toctree}
+    :maxdepth: 1
+    Mathematics/Rational
 ```
 
-## Example
+## 💡 Example
 
 ```cpp
 
@@ -53,4 +55,12 @@ Thus, almost any calculations can be performed using this module.
     Number_3 = Xila.Mathematics.Logarithm(20, 5);                       // -- Calculate the base 5 logarithm of 20 (is equal to ...).
     Number_3 = Xila.Mathematics.Natural_Logarithm(36);                  // -- Calculate the natural logarithm of 36 (is equal to 3.58...).
     Number_3 = Xila.Mathematics.Decimal_Logarithm(85);                  // -- Calculate the decimal logarithm of 85 (is equal to 1.92...).
+```
+
+## 📚 API reference
+
+```{eval-rst}
+.. doxygenclass::   Xila_Namespace::Mathematics_Class
+    :members:
+```
 

@@ -1,7 +1,7 @@
 # 🔡 `String_Type` / `Static_String_Type`
 
 
-## Description
+## 👓 Overview
 
 In order to avoir the `cstring` library which is necessary to reduce the memory footprint of strings, but which is also tedious to use.
 Xila implements classes allowing to manipulate character strings in a simple and efficient way.
@@ -25,13 +25,13 @@ Similar to `String_Type`, `Static_String_Type` (inherited from `String_Type`) is
     It's highly recommended to use `Static_String_Type` instead of `String_Type` when possible since it's faster, more efficient and avoid memory fragmentation.
 :::
 
-## Example
+## 💡 Example
 
 ```cpp
 
 ```
 
-## API reference
+## 📚 API reference
 
 ```{eval-rst}
 .. doxygenclass:: Xila_Namespace::String_Class

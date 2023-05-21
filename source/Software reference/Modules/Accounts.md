@@ -2,7 +2,7 @@
 
 Here you will find a full description of the account management module.
 
-## Description
+## 👓 Overview
 
 This module is responsible for ensuring a minimum of security (although primitive).
 The identifiers are stored in a register specific to each user.
@@ -11,7 +11,7 @@ The identifiers are stored in a register specific to each user.
     In spite that credentials are hashed, salted and peppered, this module cannot be considered as secure.
 ```
 
-## Example
+## 💡 Example
 
 ```cpp
     using namespace Xila;
@@ -40,7 +40,7 @@ The identifiers are stored in a register specific to each user.
     }
 ```
 
-## API reference
+## 📚 API reference
 
 ```{eval-rst}
 .. doxygenclass::   Xila_Namespace::Accounts_Class

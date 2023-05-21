@@ -8,7 +8,7 @@ Here you will find a full description of the `I2S_Type`.
 
 It uses also the `I2S_Configuration_Type` class to store / load the configuration of the `I2S` peripheral. 
 
-## API reference
+## 📚 API reference
 
 ```{eval-rst}
 

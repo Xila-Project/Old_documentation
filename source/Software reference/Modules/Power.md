@@ -2,11 +2,11 @@
 
 Here you will find a full description of the power abstraction layer.
 
-## Overview
+## 👓 Overview
 
 Xila provides a power abstraction layer to simplify the use of power related operations and information.
 
-## Example
+## 💡 Example
 
 ```cpp
     using namespace Xila;
@@ -15,7 +15,7 @@ Xila provides a power abstraction layer to simplify the use of power related ope
     uint16_t Voltage = Xila.Power.Get_Voltage();            // -- Get battery voltage in millivolts.
 ```
 
-## API reference
+## 📚 API reference
 
 ```{eval-rst}
 .. doxygenclass::   Xila_Namespace::Power_Class

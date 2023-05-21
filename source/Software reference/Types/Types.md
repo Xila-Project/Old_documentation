@@ -8,7 +8,5 @@ Date & Time
 Instruction
 Queue
 String
-Software Handle
-Software
 Task
 ```

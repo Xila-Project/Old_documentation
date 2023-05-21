@@ -2,7 +2,7 @@
 
 Here you will find a full description of the `Software_Type`.
 
-## Description
+## 👓 Overview
 
 `Software_Type` is the base class of all software on Xila. It's derivated from `Module_Type` to allow polymorphism (a Module can use the same API of another module). `Software_Type` is intended to be derived, by the developer, in order implement the methods and attributes used by the software. When an instance of the software is created (see `Software_Handle_Type`), an instance of the class is created. It's also used by Xila to communicate with the software (send `Instruction_Type`). Once the software is closed, this same instance is freed. Xila also uses this API to communicate with the software (send instructions, variables etc.).
 
@@ -14,7 +14,7 @@ Here you will find a full description of the `Software_Type`.
     `Software_Type` is an alias of `Software_Class` (used by the internals).
 :::
 
-## Example
+## 💡 Example
 
 ```cpp
     using namespace Xila;
@@ -77,7 +77,7 @@ Here you will find a full description of the `Software_Type`.
     }
 ```
 
-## API reference
+## 📚 API reference
 
 ```{eval-rst}
 .. doxygenclass::   Xila_Namespace::Software_Class

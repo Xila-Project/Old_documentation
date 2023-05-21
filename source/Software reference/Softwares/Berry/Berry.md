@@ -25,7 +25,7 @@ At startup, Berry (`Berry_Class::Load_Softwares_Handles()`) looks for all softwa
 
 When a user launch a Berry software, the Softwares is firstly compiled to bytecode and then loaded in memory for execution. Once the software execution is finished (escape the global scope), all software freed all at once. No need to delete anything since everything is allocated in the VM virtual memory.
 
-## Examples
+## 💡 Examples
 
 Multiples examples are available :
 - [Berry REPL](https://github.com/Xila-Project/Berry_REPL)
@@ -34,7 +34,7 @@ Multiples examples are available :
 
 You can also use the [template](https://github.com/Xila-Project/Berry_Software_Template).
 
-## API reference
+## 📚 API reference
 
 ```{eval-rst}
 .. doxygenclass:: Berry_Class

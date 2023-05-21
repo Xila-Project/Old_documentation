@@ -2,7 +2,7 @@
 
 Here you will find a full description of `Task_Type`.
 
-## Description
+## 👓 Overview
 
 In order to allow the entire system to perform multi-threaded operations, Xila uses `Task_Type`. These execute functions 
 These are functions that are executed in parallel to each others. Currently, Xila rely on the FreeRTOS scheduler to manage tasks and `Task_Class` is mainly a class wrapper of `vTaskHandle`. This wrapper also provide additional feature and insights / metrics on tasks.
@@ -11,7 +11,7 @@ These are functions that are executed in parallel to each others. Currently, Xil
     By default, each software has a main task created when the software is loaded. If you want to perform multi-threaded operations, you will have to create a second task, using `Task_Type::Create` or `Task_Type(...)` (not the default constructor).
 :::
 
-## Example
+## 💡 Example
 
 ```cpp
     using namespace Xila;
@@ -54,7 +54,7 @@ These are functions that are executed in parallel to each others. Currently, Xil
     }
 ```
 
-## API reference
+## 📚 API reference
 
 ```{eval-rst}
 .. doxygentypedef:: Xila_Namespace::Task_Type

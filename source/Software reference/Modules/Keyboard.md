@@ -2,11 +2,11 @@
 
 Here you will find a full description of the keyboard abstraction layer.
 
-## Description
+## 👓 Overview
 
 The latter is based on the `PS2Keyboard <https://github.com/PaulStoffregen/PS2Keyboard>`_ library by `Paul STOFFREGEN <https://github.com/PaulStoffregen>`_.
 
-## Example
+## 💡 Example
 
 ```cpp
 
@@ -18,7 +18,7 @@ The latter is based on the `PS2Keyboard <https://github.com/PaulStoffregen/PS2Ke
     }
 ```
 
-## API reference
+## 📚 API reference
 
 ```{eval-rst}
 .. doxygenclass::   Xila_Namespace::Keyboard_Class
