@@ -1,11 +1,10 @@
 # 📋 Clipboard
 
-Here you will find a full description of the clipboard API.
-
-This module is responsible to allow copy / paste feature.
-It only offers an API, the graphical implementation remains the responsibility of the software.
+Here you will find a full description of the `Clipboard` module.
 
 ## 👓 Overview
+
+This module is responsible to copy and paste data between softwares.
 
 ## 💡 Examples
 
@@ -29,6 +28,10 @@ It only offers an API, the graphical implementation remains the responsibility o
 ## 📚 API reference
 
 ```{eval-rst}
+.. doxygenvariable::  Xila_Namespace::Clipboard
+
+.. doxygentypedef::   Xila_Namespace::Clipboard_Type
+
 .. doxygenclass::   Xila_Namespace::Clipboard_Class
     :members:
 ```

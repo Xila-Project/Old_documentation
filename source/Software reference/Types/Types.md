@@ -4,10 +4,11 @@ Xila has a lot of types, and it's important to know them in order to use Xila pr
 
 ```{toctree}
     :maxdepth: 1
-Date & Time
 Primitive types
+Date & Time
 Instruction
 Queue
+Semaphore
 String
 Task
 ```

@@ -1,15 +1,28 @@
 # 👥 Accounts
 
-Here you will find a full description of the account management module.
+Here you will find a full description of the `Accounts` module.
 
 ## 👓 Overview
 
-This module is responsible for ensuring a minimum of security (although primitive).
-The identifiers are stored in a register specific to each user.
+This module is responsible for managing user accounts, session and ensuring a minimum of security (although primitive).
 
-```{caution}
-    In spite that credentials are hashed, salted and peppered, this module cannot be considered as secure.
-```
+Each user credentials are stored in a register specific to each user. The credentials are hashed, salted and peppered multiple times before being stored.
+
+:::{caution}
+In spite that credentials are hashed, salted and peppered, this module cannot be considered as secure. So don't use it for sensitive data.
+:::
+
+The user `Xila` is the **system user** and thus cannot be deleted. It has the highest privileges and special treatment.
+
+:::{note}
+Only one user can be logged at a time. When a user is logged, the other users are locked.
+:::
+
+### 〰️ Types
+
+`Accounts` uses the following types :
+- `User_Type` : A class that represents a user account.
+- `User_State_Type` : An enumeration that represents the state of a user account.
 
 ## 💡 Example
 
@@ -43,6 +56,14 @@ The identifiers are stored in a register specific to each user.
 ## 📚 API reference
 
 ```{eval-rst}
+
+.. doxygennamespace:: Xila_Namespace::Accounts_Types
+    :members:
+
+.. doxygenvariable::  Xila_Namespace::Accounts
+    
+.. doxygentypedef::   Xila_Namespace::Accounts_Type
+
 .. doxygenclass::   Xila_Namespace::Accounts_Class
     :members:
 ```

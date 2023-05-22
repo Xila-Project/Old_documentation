@@ -13,11 +13,12 @@ Introduction/Get started/Get started
    :caption:   📖 Software reference   
    :maxdepth:  2
 
-Software reference/Modules/Modules
-Software reference/Types/Types
-Software reference/Softwares/Softwares
-Software reference/Registries/Registries
 Software reference/Dependencies
+Software reference/Nomenclature
+Software reference/Modules/Modules
+Software reference/Registries/Registries
+Software reference/Softwares/Softwares
+Software reference/Types/Types
 ```
 
 ```{toctree}

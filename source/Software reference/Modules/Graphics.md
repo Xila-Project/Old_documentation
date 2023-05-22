@@ -8,8 +8,8 @@ It is a dumb C++ wrapper for LVGL (a free and open-source graphics library for e
 It allows the developer to create complex graphic interface with ease.
 
 :::{warning}
-    It is not recommended to use the LVGL API directly as it is not thread safe.
-    The wrapper is designed to support concurrent execution using `Xila_Namespace::Semaphore_Type`.
+It is not recommended to use the LVGL API directly as it is not thread safe.
+The wrapper is designed to support concurrent execution using `Xila_Namespace::Semaphore_Type`.
 :::
 
 It depends on the `Display` module.
@@ -33,4 +33,47 @@ It depends on the `Display` module.
 
 ## 📚 API reference
 
-Since it's mainly a wrapper and the library is huge, the documentation is supplied here (maybe later). Please refer to the [LVGL documentation](https://docs.lvgl.io/master/) for more information. 
+:::{note}
+Since it's mainly a wrapper and the library is huge, the documentation is currently not supplied here (maybe later). Please refer to the [LVGL documentation](https://docs.lvgl.io/master/) for more information. 
+:::
+
+Widgets have been wrapped into classes which have the same name as the original widget with the `_Type` suffix. Here's the list of the widgets :
+
+- `Bar_Type`
+- `Button_Matrix_Type`
+- `Button_Type`
+- `Calendar_Type`
+- `Canvas_Type`
+- `Chart_Type`
+- `Checkbox_Type`
+- `Color_Wheel_Type`
+- `Drop_Down_List_Type`
+- `Image_Type`
+- `Keyboard_Type`
+- `Label_Type`
+- `Line_Type`
+- `List_Type`
+- `Menu_Type`
+- `Object_Type`
+- `Point_Type`
+- `QRCode_Type`
+- `Roller_Type`
+- `Slider_Type`
+- `Spinbox_Type`
+- `Style_Type`
+- `Switch_Type`
+- `Table_Type`
+- `Tabs_Type`
+- `Text_Area_Type`
+
+Some widget have also been added :
+
+- `Dialog_Type`
+- `File_Explorer_Type`
+- `Screen_Type`
+- `Window_Type`
+
+These wrapper only contains a pointer to the LVGL widget. The original widget is created and deleted by using `Create(...)` and `Delete()` methods (not created / deleted with wrapper constructor / destructor). The heritage of widget have been respected, and casting is possible (checking is performed using `lv_class_t`).
+
+See [](<../Nomenclature.md>) for more information about the naming convention.
+

@@ -32,11 +32,11 @@ GPIO
 Graphics
 Keyboard
 Mathematics
+Memory
 Power
 Softwares
 Sound
 System
-WiFi
 ```
 
 Here you will find a full description of `Module_Type`.
