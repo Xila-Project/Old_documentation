@@ -2,3 +2,5 @@ build/
 html/
 doctrees/
 *.d
+.vscode/
+
