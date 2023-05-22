@@ -12,7 +12,7 @@ This module is responsible for everything related to mathematics. It supports a 
 
 ```{toctree}
     :maxdepth: 1
-    Mathematics/Rational
+Mathematics/Rational
 ```
 
 ## 💡 Example

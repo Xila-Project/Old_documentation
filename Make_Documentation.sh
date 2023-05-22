@@ -1,4 +1,6 @@
-sh ./Doxygen/Make_Doxygen.sh
+clear
 
-sh ./Make_Sphinx.sh
+#sh ./Doxygen/Make_Doxygen.sh
+
+make html
 

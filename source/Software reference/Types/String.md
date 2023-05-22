@@ -17,12 +17,12 @@ Similar to `String_Type`, `Static_String_Type` (inherited from `String_Type`) is
 ::::
 
 :::{warning}
-    `String_Type` cannot be pre-allocated when it's declared as a global variable.
-    It's due to the fact that it uses dynamic memory allocation, which may not be active at time of global variable creation.
+`String_Type` cannot be pre-allocated when it's declared as a global variable.
+It's due to the fact that it uses dynamic memory allocation, which may not be active at time of global variable creation.
 :::
 
 :::{important}
-    It's highly recommended to use `Static_String_Type` instead of `String_Type` when possible since it's faster, more efficient and avoid memory fragmentation.
+It's highly recommended to use `Static_String_Type` instead of `String_Type` when possible since it's faster, more efficient and avoid memory fragmentation.
 :::
 
 ## 💡 Example

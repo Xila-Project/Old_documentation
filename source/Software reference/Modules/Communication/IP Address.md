@@ -21,6 +21,6 @@ IP_Address_Type IP_1(192, 168, 1, 1); // - Create and set IP address.
 ## 📚 API reference
 
 ```{eval-rst}
-.. doxygenclass:: Xila_Namespace::WiFi_Types::IP_Address_Class
+.. doxygenclass:: Xila_Namespace::Communication_Types::IP_Address_Class
 ```
 

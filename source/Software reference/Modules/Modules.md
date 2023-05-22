@@ -11,11 +11,11 @@ This way, it's easier to add new features and to debug the system since it reduc
 `Module_Type` is the base type that could be derived to create a module.
 
 :::{note}
-    `Software_Type` is also a child class of `Module_Type`.
+`Software_Type` is also a child class of `Module_Type`.
 :::
 
 :::{note}
-    `Module_Type` is an alias of `Module_Class` (used by the internals).
+`Module_Type` is an alias of `Module_Class` (used by the internals).
 :::
 
 Here is the list of the modules :
@@ -24,6 +24,7 @@ Here is the list of the modules :
 :maxdepth:  1
 Accounts
 Clipboard
+Communication
 Display
 Drive
 Flash

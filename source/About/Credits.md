@@ -33,13 +33,15 @@ Here are credits to sources where I borrow code :
 ### Reused circuit design
 
 - [LiPo Charge/Protect/5V Boost Circuit](https://www.youtube.com/watch?v=Fj0XuYiE7HU) - [Great Scott](https://www.youtube.com/channel/UC6mIxFTvXkWQVEHPsEdflzQ)
+- [Latch Circuit](https://youtu.be/y1ROEogHF7A) - [Great Scott](https://www.youtube.com/channel/UC6mIxFTvXkWQVEHPsEdflzQ)
 
 ## 🛠️ Tools
 
 ### 🖥️ Development
 
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [Platform IO IDE](https://platformio.org)
+  - [Platform IO IDE](https://platformio.org)
+  - [Berry extension](https://marketplace.visualstudio.com/items?itemName=berry.berry)
 - [Git](https://git-scm.com/)
   
 ### 📝 Documentation
@@ -54,7 +56,7 @@ Here are credits to sources where I borrow code :
 ### 📐 Computer Aided Design
 
 - [EasyEDA](https://easyeda.com/)
-- [FreeCAD](https://www.freecad.org/)
+- [Fusion 360](https://www.autodesk.fr/products/fusion-360/)
 
 ### 🖼️ Images manipulation
 

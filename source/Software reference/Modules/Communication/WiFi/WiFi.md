@@ -5,14 +5,11 @@ Here you will find a complete description of the WiFi abstraction layer.
 ## 👓 Overview
 
 Xila provides a WiFi abstraction layer to simplify the use of WiFi. It is based on the ESP32 WiFi library for Arduino.
-It's composed of 3 sub-modules: `Station`, `Access Point` and `Scan`.
 
-Here are the types defined in the namespace `WiFi_Types` and used by `WiFi` module.
-
-```{toctree}
-:maxdepth:  1
-WiFi/IP Address
-```
+It's composed of 3 sub-modules: 
+- `Station`
+- `Access Point`
+- `Scan`
 
 ## 💡 Example
 
@@ -25,12 +22,18 @@ WiFi/IP Address
     WiFi.Station.Get_MAC_Address(); // - Get the MAC address of the current WiFi network.
     WiFi.Station.Get_SSID(); // - Get the SSID of the current WiFi network.
     WiFi.Station.Get_Status(); // - Get the status of the current WiFi network.
+
+    WiFi.Scan.Begin();
+
+
+    WiFi.Scan.Get_Informations();
+    WiFi.Scan.Clean();
     
 ```
 
 ## 📚 API reference
 
 ```{eval-rst}
-.. doxygenclass::   Xila_Namespace::WiFi_Class
+.. doxygenclass::   Xila_Namespace::Communication_Types::WiFi_Class
     :members:
 ```

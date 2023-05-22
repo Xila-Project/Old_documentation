@@ -6,7 +6,7 @@ Here you will find how to get started to contribute to Xila.
 
 ### ✅ Requirements
 
-- A [supported hardware](../../Hardware%20reference/Supported%20hardware.md).
+- [Supported hardware](../../Hardware%20reference/Supported%20hardware.md).
 - [Git](https://git-scm.com/downloads).
 - [Visual Studio Code](https://code.visualstudio.com/) with [Platform IO IDE](https://platformio.org/install/ide?install=vscode) extension.
 
@@ -101,7 +101,3 @@ git clone <URL of the forked repository> --recurse-submodule
 ```bash
 hugo server
 ```
-
-### 🍓 Berry
-If you want to write software for [Berry](../../Software%20reference/Softwares/Berry.md) it's highly recommended to install [Berry Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=berry.berry).
-

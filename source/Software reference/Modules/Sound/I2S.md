@@ -13,10 +13,8 @@ It uses also the `I2S_Configuration_Type` class to store / load the configuratio
 ```{eval-rst}
 
 .. doxygenenum:: Xila_Namespace::Sound_Types::Mode_Type
-    :members:
 
 .. doxygenenum:: Xila_Namespace::Sound_Types::Format_Type
-    :members:
 
 .. doxygenclass:: Xila_Namespace::Sound_Types::I2S_Configuration_Class
     :members:

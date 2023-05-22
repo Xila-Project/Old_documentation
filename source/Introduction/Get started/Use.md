@@ -4,7 +4,7 @@ Here you will find how to get started with Xila hardware and software.
 
 ### ✅ Requirements
 
-- A [supported hardware](../../Hardware%20reference/Supported%20hardware.md).
+- [Supported hardware](../../Hardware%20reference/Supported%20hardware.md).
 - [Visual Studio Code](https://code.visualstudio.com/) with [Platform IO IDE](https://platformio.org/install/ide?install=vscode) extension.
 - [Git](https://git-scm.com/downloads).
 

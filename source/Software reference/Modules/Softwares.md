@@ -1,4 +1,4 @@
-# Softwares
+# 📦 Softwares
 
 Here you will find a full description of the software management API.
 
@@ -13,6 +13,7 @@ It's using `Softwares_Types::Software_Type`
 Softwares module is using the following types :
 
 :::{toctree}
+    :maxdepth: 1
 Softwares/Software Handle
 Softwares/Software
 :::

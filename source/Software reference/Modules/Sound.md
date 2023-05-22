@@ -1,6 +1,6 @@
 # 🔈 Sound
 
-Here you will find a full description of the sound abstraction layer.
+Here you will find a full description of the `Sound` abstraction layer.
 
 ## 👓 Overview
 
@@ -26,12 +26,14 @@ flowchart LR
 
 ## Types
 
-The sound module is using the following types :
+The `Sound` module is using the following types :
 
 ```{toctree}
     :maxdepth: 1
 
 Sound/I2S
+Sound/File Player
+Sound/Volume
 
 ```
 

@@ -195,7 +195,7 @@ condition ? expression1 : expression2
 ```
 
 If the value of condition is true, then expression1 will
-be executed, otherwise expression2 will be executed. The
+be executed, otherwise expression2 will be executed. TheVisual
 conditional expression return the the last evaluated value.
 
 ```python

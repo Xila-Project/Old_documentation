@@ -1,4 +1,4 @@
-# `Queue_Type`
+# 🧶 `Queue_Type`
 
 ## 👓 Overview
 

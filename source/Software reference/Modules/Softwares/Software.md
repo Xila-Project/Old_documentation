@@ -6,12 +6,12 @@ Here you will find a full description of the `Software_Type`.
 
 `Software_Type` is the base class of all software on Xila. It's derivated from `Module_Type` to allow polymorphism (a Module can use the same API of another module). `Software_Type` is intended to be derived, by the developer, in order implement the methods and attributes used by the software. When an instance of the software is created (see `Software_Handle_Type`), an instance of the class is created. It's also used by Xila to communicate with the software (send `Instruction_Type`). Once the software is closed, this same instance is freed. Xila also uses this API to communicate with the software (send instructions, variables etc.).
 
-:::{important}
-    Declaring variables and functions in the global scope should be **avoided** (except for `Software_Handle_Type`), unless you know what you are doing. Indeed, the global scope is **shared** between all instances of the software and using global scope could lead to unexpected behavior. In addition, using global scope will reduce the memory available for the whole system (since it's static memory). This also apply to static member variables and functions. That do not apply to `Berry` software, since it's using it's own memory space for each instance. 
+:::{warning}
+Declaring variables and functions in the global scope should be **avoided** (except for `Software_Handle_Type`), unless you know what you are doing. Indeed, the global scope is **shared** between all instances of the software and using global scope could lead to unexpected behavior. In addition, using global scope will reduce the memory available for the whole system (since it's static memory). This also apply to static member variables and functions. That do not apply to `Berry` software, since it's using it's own memory space for each instance. 
 :::
 
 :::{note}
-    `Software_Type` is an alias of `Software_Class` (used by the internals).
+`Software_Type` is an alias of `Software_Class` (used by the internals).
 :::
 
 ## 💡 Example
@@ -80,6 +80,6 @@ Here you will find a full description of the `Software_Type`.
 ## 📚 API reference
 
 ```{eval-rst}
-.. doxygenclass::   Xila_Namespace::Software_Class
+.. doxygenclass::   Xila_Namespace::Softwares_Types::Software_Class
     :members:
 ```

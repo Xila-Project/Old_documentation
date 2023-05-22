@@ -6,7 +6,6 @@ Here you will find a full description of the `Berry` software.
 
 ```{toctree}
 :maxdepth:  1
-Libraries/List
 Syntax
 Bindings
 ```

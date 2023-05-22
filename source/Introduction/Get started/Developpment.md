@@ -7,7 +7,7 @@
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Platform IO IDE](https://platformio.org/install/ide?install=vscode) extension.
 - [Git](https://git-scm.com/downloads).
-- A [supported hardware](../../Hardware%20reference/Supported%20hardware.md).
+- [Supported hardware](../../Hardware%20reference/Supported%20hardware.md).
 
 ### 📖 Steps
 
@@ -21,18 +21,15 @@ git clone https://github.com/Xila-Project/Code.git --recurse-submodules
 code Code
 ```
 
-3. **Open** `Platform IO` and open the `Code` folder as a project.
-
-
-
+3. **Open** the project in `Platform IO` (`platformio.ini` file).
 
 ## 🍓 Berry software
 
 ### ✅ Requirements
 
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [Berry Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=berry.berry).
-- [Git](https://git-scm.com/downloads).
+  - [Berry extension](https://marketplace.visualstudio.com/items?itemName=berry.berry)
+- [Git](https://git-scm.com/downloads)
 
 ### 📖 Steps
 
@@ -60,7 +57,7 @@ git clone <URL of the forked repository> --recurse-submodule
 
 *Official installation steps can be found [here](https://github.com/berry-lang/berry).*
 
-4. **Build** your software using the following commands :
+4. **Build** your software :
 ```bash
 berry -c Main.be
 ```
