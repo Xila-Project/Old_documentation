@@ -24,6 +24,10 @@ This API rest upon the Nextion Library. For the full API, please visit the libra
 ## 📚 API reference
 
 ```{eval-rst}
+.. doxygenvariable::  Xila_Namespace::Display
+
+.. doxygentypedef::   Xila_Namespace::Display_Type
+
 .. doxygenclass::   Xila_Namespace::Display_Class
     :members:
 ```

@@ -26,6 +26,10 @@ Here you will find a full description of the flash abstraction layer.
 ## 📚 API reference
 
 ```{eval-rst}
+.. doxygenvariable:: Xila_Namespace::Flash
+
+.. doxygentypedef:: Xila_Namespace::Flash_Type
+
 .. doxygenclass::   Xila_Namespace::Flash_Class
     :members:
 ```

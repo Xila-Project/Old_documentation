@@ -13,7 +13,7 @@ Introduction/Get started/Get started
    :caption:   📖 Software reference   
    :maxdepth:  2
 
-Software reference/Dependencies
+Software reference/Structure
 Software reference/Nomenclature
 Software reference/Modules/Modules
 Software reference/Registries/Registries

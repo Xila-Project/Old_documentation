@@ -34,6 +34,17 @@ It's composed of 3 sub-modules:
 ## 📚 API reference
 
 ```{eval-rst}
+
+.. doxygenenum:: Xila_Namespace::Communication_Types::Status_Type
+    
+.. doxygenenum:: Xila_Namespace::Communication_Types::Mode_Type
+    
+.. doxygenenum:: Xila_Namespace::Communication_Types::Authentication_Mode_Type
+
+.. doxygenenum:: Xila_Namespace::Communication_Types::WPA2_Authentication_Method_Type
+
+.. doxygentypedef:: Xila_Namespace::Communication_Types::WiFi_Type
+
 .. doxygenclass::   Xila_Namespace::Communication_Types::WiFi_Class
     :members:
 ```

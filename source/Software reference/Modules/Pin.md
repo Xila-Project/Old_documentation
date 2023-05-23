@@ -1,10 +1,21 @@
-# 🔛 Input / Output
+# 🔛 Pin
 
-Here you will find a full description of the GPIO library.
+Here you will find a full description of the `Pin` module.
 
 ## 👓 Overview
 
-The GPIO library is a wrapper for the Arduino implementation of the GPIO.
+This module allows to easily use I/O pins and communication peripherals.
+
+### Types
+
+This module uses the following types :
+
+```{toctree}
+    :maxdepth: 1
+
+Pin/Serial
+Pin/Two Wire
+```
 
 ## 💡 Example
 
@@ -32,6 +43,11 @@ The GPIO library is a wrapper for the Arduino implementation of the GPIO.
 ## 📚 API reference
 
 ```{eval-rst}
+.. doxygenvariable:: Xila_Namespace::Pin
+
+.. doxygentypedef:: Xila_Namespace::Pin_Type
+    :members:
+
 .. doxygenclass::   Xila_Namespace::Pin_Class
     :members:
 ```

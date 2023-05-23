@@ -17,12 +17,11 @@ comment -#
 An identifier is a name used to identify a variable, function, class, module or any other user-defined item.
 
 :::{note}
-    An identifier starts with a letter an underscore, followed by zero or more letters, underscores and digits (0 to 9). Identifiers are case sensitive.
+An identifier starts with a letter an underscore, followed by zero or more letters, underscores and digits (0 to 9). Identifiers are case sensitive.
 :::
 
 :::{note}
-    The following identifiers are reserved for internal use and therefore cannot be used :
-`if` `elif` `else` `while` `for` `def` `end` `class` `break` `continue` `return` `true` `false` `nil` `var` `do` `import` `as`
+The following identifiers are reserved for internal use and therefore cannot be used : `if`, `elif`, `else`, `while`, `for`, `def`, `end`, `class`, `break`, `continue`, `return`, `true`, `false`, `nil`, `var`, `do`, `import`, `as`.
 :::
 
 ## Operators
@@ -85,7 +84,7 @@ Like other oriented programming languages, a class consists of :
 - Methods and operators overloading.
 
 :::{note}
-     Berry only supports single inheritance, that is, a class can only have one base class, and the base class uses the operator : to declare :
+Berry only supports single inheritance, that is, a class can only have one base class, and the base class uses the operator : to declare :
 :::
 
 ```python

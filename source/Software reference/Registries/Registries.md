@@ -23,11 +23,11 @@ Each registry begin with a `Registry` key.
 It allows you to know if the loaded register is indeed the one targeted.
 
 :::{warning}
-    Be careful with the `System.xrf` registry. Because this one cannot be repaired.
-    If a corruption occur, it is then necessary to manually replace the latter with a healthy file (can be found in install archive).
+Be careful with the `System.xrf` registry. Because this one cannot be repaired automatically.
+If a corruption occur, it is then necessary to manually replace the latter with a healthy file (can be found in install archive).
 :::
 
-## Registries reference
+## 📚 Registries reference
 
 ### Display
 

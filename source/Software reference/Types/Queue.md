@@ -11,8 +11,8 @@
 ## 📚 API reference
 
 ```{eval-rst}
+.. doxygentypedef:: Xila_Namespace::Queue_Type
 
 .. doxygenclass:: Xila_Namespace::Queue_Class
     :members:
-
 ```

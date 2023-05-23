@@ -4,25 +4,32 @@ Here you will find a full description of the `Clipboard` module.
 
 ## 👓 Overview
 
-This module is responsible to copy and paste data between softwares.
+This module allows to copy and paste data between softwares.
+
+:::{warning}
+Be careful, the clipboard is shared between all softwares and no check is done on the content. Never trust the clipboard content.
+:::
 
 ## 💡 Examples
 
 ```cpp
     using namespace Xila;
 
-    void Function_A()
+    Clipboard.Copy("Hello world !"); // Copy "Hello world !" to the clipboard.
+
+    char Buffer[20];
+    Clipboard.Paste(Buffer, sizeof(Buffer)); // Paste the clipboard content to Buffer.
+
+    Static_String_Type<20> Static_String;
+    // Paste the clipboard content to Static_String.
+    if (Clipboard.Paste(Static_String) == "Hello world !")  // Always false.
     {
-        char String_To_Copy[] = "String to copy";
-        Xila.Clipboard.Copy(String_To_Copy, sizeof(String_To_Copy));    // -- Copy a string into the clipboard.
+        // ...
     }
 
-    void Function_B()
-    {
-        char String_To_Paste[32];
-        Xila.Clipboard.Paste(String_To_Paste, sizeof(String_To_Paste)); // -- String to paste from the clipboard.
-        Xila.Clipboard.Clear(); // -- Clear the clipboard.
-    }
+    Clipboard.Copy(205); // Copy the number 205 to the clipboard.
+
+    auto Number = Clipboard.Paste();
 ```
 
 ## 📚 API reference

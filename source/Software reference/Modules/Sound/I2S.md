@@ -16,8 +16,12 @@ It uses also the `I2S_Configuration_Type` class to store / load the configuratio
 
 .. doxygenenum:: Xila_Namespace::Sound_Types::Format_Type
 
+.. doxygentypedef:: Xila_Namespace::Sound_Types::I2S_Configuration_Type
+
 .. doxygenclass:: Xila_Namespace::Sound_Types::I2S_Configuration_Class
     :members:
+
+.. doxygentypedef:: Xila_Namespace::Sound_Types::I2S_Type
 
 .. doxygenclass:: Xila_Namespace::Sound_Types::I2S_Class
     :members:

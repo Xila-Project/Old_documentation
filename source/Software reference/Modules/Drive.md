@@ -6,7 +6,10 @@ Here you will find a full description of the drive abstraction layer.
 
 This module is an abstranction layer for the drive and its file system.
 
-It uses the type `Drive_Types::File_Class` 
+It uses the following types :
+- `Seek_Mode_Type`
+- `File_Type` 
+- `Drive_Type_Type`
 
 ## 💡 Example
 
@@ -14,9 +17,9 @@ It uses the type `Drive_Types::File_Class`
     using namespace Xila;
     using namespace Drive_Types;
 
-    File_Type File = Drive.Open("/Test.txt", true)
+    File_Type File = Drive.Open("/Test.txt")  // Open file in write mode, if the file does not exist, it will be created automatically.
 
-    if (!File)
+    if (!File)  // Always check if the file was opened correctly.
     {
         // Do something if the file can't be opened.
     }
@@ -26,16 +29,12 @@ It uses the type `Drive_Types::File_Class`
 
     Drive.Make_Directory("/Folder");
 
-    File_Type Folder = Drive.Open("/Folder", true);
+    File_Type Folder = Drive.Open("/Folder");
 
     if (!Folder)
     {
         // Do something if the folder can't be opened.
     }
-
-
-
-
 
 
     Xila_Namespace::Drive_Class::Sd_Card_Type Card_Type = Xila.Drive.Type();    // -- Get card type.
@@ -60,8 +59,16 @@ It uses the type `Drive_Types::File_Class`
 ## 📚 API reference
 
 ```{eval-rst}
+.. doxygenenum:: Xila_Namespace::Drive_Types::Seek_Mode_Type
+
+.. doxygentypedef:: Xila_Namespace::Drive_Types::File_Type
+
 .. doxygenclass::  Xila_Namespace::Drive_Types::File_Class
     :members:
+
+.. doxygenvariable:: Xila_Namespace::Drive
+
+.. doxygentypedef:: Xila_Namespace::Drive_Type
 
 .. doxygenclass::   Xila_Namespace::Drive_Class
     :members:

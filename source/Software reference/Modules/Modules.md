@@ -5,17 +5,13 @@ Here you will find a full description of module.
 ## 👓 Overview
 
 Xila has a modular architecture which means that each system part is a module.
-A module is a part of the system responsible for a specific task. It could be an hardware abstraction layer or a library.
-This way, it's easier to add new features and to debug the system since it reduces coupling.
+A module is a part of the system responsible for a specific task (hardware abstraction layer, management or complementary library).
+This way, it's easier to add new features and debug the system since it reduces coupling.
 
 `Module_Type` is the base type that could be derived to create a module.
 
 :::{note}
 `Software_Type` is also a child class of `Module_Type`.
-:::
-
-:::{note}
-`Module_Type` is an alias of `Module_Class` (used by the internals).
 :::
 
 Here is the list of the modules :
@@ -28,7 +24,7 @@ Communication
 Display
 Drive
 Flash
-GPIO
+Pin
 Graphics
 Keyboard
 Mathematics
@@ -54,6 +50,8 @@ It can be a hardware abstraction layer, a software or a library.
 ## 📚 API reference
 
 ```{eval-rst}
+.. doxygentypedef:: Xila_Namespace::Module_Type
+
 .. doxygenclass::   Xila_Namespace::Module_Class
     :members:
 ```

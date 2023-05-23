@@ -10,5 +10,6 @@ Instruction
 Queue
 Semaphore
 String
+Stream
 Task
 ```

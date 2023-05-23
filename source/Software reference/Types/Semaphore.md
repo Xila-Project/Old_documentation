@@ -22,7 +22,6 @@ For a more concise use, `Semaphore_Type` also offers the `Auto_Semaphore_Type`, 
 
 ```{eval-rst}
 .. doxygenenum:: Xila_Namespace::Semaphore_Type_Type
-    :members:
 
 .. doxygentypedef:: Xila_Namespace::Auto_Semaphore_Type
 

@@ -34,8 +34,12 @@ It's highly recommended to use `Static_String_Type` instead of `String_Type` whe
 ## 📚 API reference
 
 ```{eval-rst}
+.. doxygentypedef:: Xila_Namespace::String_Type
+
 .. doxygenclass:: Xila_Namespace::String_Class
     :members:
+
+.. doxygentypedef:: Xila_Namespace::Static_String_Type
 
 .. doxygenclass:: Xila_Namespace::Static_String_Class
     :members:

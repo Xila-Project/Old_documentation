@@ -34,7 +34,7 @@ It depends on the `Display` module.
 ## 📚 API reference
 
 :::{note}
-Since it's mainly a wrapper and the library is huge, the documentation is currently not supplied here (maybe later). Please refer to the [LVGL documentation](https://docs.lvgl.io/master/) for more information. 
+Since it's mainly a wrapper and the library is huge, the full documentation is currently not supplied here (maybe later). Please refer to the [LVGL documentation](https://docs.lvgl.io/master/) for more information. 
 :::
 
 Widgets have been wrapped into classes which have the same name as the original widget with the `_Type` suffix. Here's the list of the widgets :
