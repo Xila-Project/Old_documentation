@@ -1,8 +1,10 @@
 # `Stream_Type`
 
+Here you will find a full description of the `Stream_Type`.
+
 ## 👓 Overview
 
-This is the base class for all streams.
+`Stream_Type` is the base class for all streams.
 
 ## 📚 API reference
 

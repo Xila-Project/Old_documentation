@@ -1,5 +1,7 @@
 # `Decoder_Type`
 
+Here you will find a full description of the `Decoder_Type`.
+
 ## 👓 Overview
 
 This is the base class for all decoders.

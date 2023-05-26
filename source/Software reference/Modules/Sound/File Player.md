@@ -1,5 +1,7 @@
 # `File_Player_Type`
 
+Here you will find a full description of the `File_Player_Type`.
+
 ## 👓 Overview
 
 This type allows to play a file to an output stream.

@@ -6,7 +6,7 @@ Here you will find a full description of module.
 
 Xila has a modular architecture which means that each system part is a module.
 A module is a part of the system responsible for a specific task (hardware abstraction layer, management or complementary library).
-This way, it's easier to add new features and debug the system since it reduces coupling.
+This way, it's easier to add new features and debug the system since it reduces coupling and polymorphism is used to make the system more flexible.
 
 `Module_Type` is the base type that could be derived to create a module.
 
@@ -34,16 +34,6 @@ Softwares
 Sound
 System
 ```
-
-Here you will find a full description of `Module_Type`.
-
-## 👓 Overview
-
-A module is a part of the system responsible for a specific task. `Module_Type` is the base type that could be used type that represents a module. 
-It can be a hardware abstraction layer, a software or a library.
-`Module_Type` is a type that represents a module in the system. It's also 
-
-`Module_Type` is an alias of `Module_Class`.
 
 ## 💡 Example
 

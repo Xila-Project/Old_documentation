@@ -21,6 +21,8 @@ For all the identifiers:
 
 For `Class` and `Structure`, use the this name for internal definition and create an alias with the name followed by `_Type` for the public definition.
 
+For types that are used by a module, they are defined in the module namespace (contained in the "Xila_Namespace") which have the following name: `Xila_Namespace::<Module_Name>_Types`.
+
 ## Functions
 
 Both methods and functions follow the following convention:

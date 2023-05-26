@@ -4,7 +4,7 @@ Here is the full description of the Graphics module.
 
 ## 👓 Overview
 
-It is a dumb C++ wrapper for LVGL (a free and open-source graphics library for embedded devices) with additional features.
+It is a dumb C++ wrapper for [LVGL](https://lvgl.io) with additional features.
 It allows the developer to create complex graphic interface with ease.
 
 :::{warning}
@@ -25,10 +25,11 @@ It depends on the `Display` module.
     Window.Set_Title("Window");
 
     Object_Type Object;
-    Object.Create(Window);
-    Object.Set_Position(10, 10);
-    Object.Set_Size(100, 100);
-    Object.Set_Alignment(Alignment_Type::Center, 0, 10);
+    Object.Create(Window.Get_Body());
+    Object.Set_Alignment(Alignment_Type::Center, 0, 10);    // Set the alignment to center with a 10 pixels offset on the y axis.
+    Object.Set_Size(100, Percentage(100));  // Set the size to 100 pixels width and 100% parent window height.
+
+    Object.Delete();
 ```
 
 ## 📚 API reference
@@ -68,12 +69,20 @@ Widgets have been wrapped into classes which have the same name as the original 
 
 Some widget have also been added :
 
+:::{toctree}
+    :maxdepth: 1
+Graphics/Window
+Graphics/Dialog
+Graphics/File Explorer
+Graphics/Screen
+
 - `Dialog_Type`
 - `File_Explorer_Type`
 - `Screen_Type`
 - `Window_Type`
 
-These wrapper only contains a pointer to the LVGL widget. The original widget is created and deleted by using `Create(...)` and `Delete()` methods (not created / deleted with wrapper constructor / destructor). The heritage of widget have been respected, and casting is possible (checking is performed using `lv_class_t`).
+
+These wrapper only contains a pointer to the LVGL objects. The widget is created and deleted by using `Create(...)` and `Delete()` methods (not created / deleted with wrapper constructor / destructor). The heritage of widget have been respected, and casting is possible (using the copy constructor from the base type `Object_Type`). The type is then  performed using the `Widget_Type::Class` (wrapper for `lv_class_t`).
 
 See [](<../Nomenclature.md>) for more information about the naming convention.
 

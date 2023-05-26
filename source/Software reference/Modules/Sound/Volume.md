@@ -1,5 +1,7 @@
 # `Volume_Type`
 
+Here you will find a full description of the `Volume_Type`.
+
 ## 👓 Overview
 
 This stream allows to control the volume of another stream.
