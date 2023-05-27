@@ -12,13 +12,13 @@ Bindings
 
 ## 👓 Overview
 
-Berry is a software that embed a berry virtual machine that allow the compilation and execution of [Berry-Lang](https://github.com/berry-lang/berry) (like a JVM for Java). [Berry-Lang](https://github.com/berry-lang/berry) is an interpreted language.
+Berry is a software that embed a berry virtual machine and compiler that allow the execution of [Berry-Lang](https://github.com/berry-lang/berry) (like a JVM for Java).
 
 It has been chosen because :
 - It is lightweight.
 - Easy to learn (Python-like syntax).
 - Quite fast.
-- Implement advanced programming concept (class, operators overload).
+- Implement advanced programming concept (class, operators overload, virtual memory ...).
 
 At startup, Berry (`Berry_Class::Load_Softwares_Handles()`) looks for all software folder that contains a "Main.be" file in the `/Softwares` folder. Then, it creates handles for all of them and registers all of them to the `Software` module.
 
@@ -30,6 +30,7 @@ Multiples examples are available :
 - [Berry REPL](https://github.com/Xila-Project/Berry_REPL)
 - [Rangefinder](https://github.com/Xila-Project/Rangefinder)
 - [Calculator](https://github.com/Xila-Project/Calculator)
+- [Music Player](https://github.com/Xila-Project/Music_Player)
 
 You can also use the [template](https://github.com/Xila-Project/Berry_Software_Template).
 

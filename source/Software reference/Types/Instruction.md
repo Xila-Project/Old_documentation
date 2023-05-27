@@ -9,18 +9,28 @@ To allow `Modules` and `Software` to communicate with each other, Xila uses `Que
 ## 💡 Example
 
 ```cpp
+    using namespace Xila;
+
     void My_Software::Main_Task(void*)
     {
-        while(1)    // -- Endless loop because task must never return.
+        while (true)
         {
-            switch (Instance_Pointer->Get_Instruction())
+            if (this->Available_Instruction())
             {
-            case Instruction('I', 'n'): // -- Check if the instruction is equal to "In".
-                // -- Do stuff.
-                break;
-            default:
-                Xila.Task.Delay(100);   // -- Don't forget to add delay to reset watchdog.
-                break;
+                Instruction_Type Instruction = this->Get_Instruction();
+                if (Instruction.Get_Sender() == &Graphics)
+                {
+                    switch (Instruction.Graphics.Get_Code())
+                    {
+                    case Graphics_Types::Event_Code_Type::Clicked:
+                        Graphics_Types::Object_Type Target = Instruction.Graphics.Get_Target()
+                        
+                        // - Do something with the target.
+
+                        break;
+                    }
+                }
+
             }
 
         }
@@ -33,5 +43,5 @@ To allow `Modules` and `Software` to communicate with each other, Xila uses `Que
 .. doxygentypedef:: Xila_Namespace::Instruction_Type
 
 .. doxygenclass::   Xila_Namespace::Instruction_Class
-
+    :members:
 ```

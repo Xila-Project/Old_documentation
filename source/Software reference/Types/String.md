@@ -3,7 +3,7 @@
 
 ## 👓 Overview
 
-In order to avoir the `cstring` library which is necessary to reduce the memory footprint of strings, but which is also tedious to use.
+In order to avoid the `cstring` library which is necessary to reduce the memory footprint of strings, but is also tedious to use.
 Xila implements classes allowing to manipulate character strings in a simple and efficient way.
 
 ::::{tab-set}
@@ -12,7 +12,7 @@ Xila implements classes allowing to manipulate character strings in a simple and
 :::
 
 :::{tab-item} Static_String_Type
-Similar to `String_Type`, `Static_String_Type` (inherited from `String_Type`) is a class template for manipulating strings. However, unlike `String_Type`, `Static_String_Type` is a static string, i.e. it cannot be changed in size. It is therefore faster to handle, but requires a static memory allocation which is not practical.
+Similar to `String_Type` (it's parent class), `Static_String_Type` is a template class for manipulating strings. However, unlike `String_Type`, `Static_String_Type` is a static string, i.e. it cannot be changed in size. It is therefore faster to handle, but requires a static memory allocation which is not practical.
 :::
 ::::
 
@@ -28,7 +28,20 @@ It's highly recommended to use `Static_String_Type` instead of `String_Type` whe
 ## 💡 Example
 
 ```cpp
+    using namespace Xila;
+       
+    String_Type String_1("Hello world !"); // Create a String object and copy "Hello world !" to it.
 
+    Static_String_Type<64> String_2;
+    String_2 = "from Xila"; // Copy "from Xila" to String_2.
+
+    String_1.Remove(String_1.Length() - sizeof(" !") + 1, sizeof(" !") - 1); // Remove " !" from String_1.
+    String_1 += String_2; // Concatenate String_2 to String_1.
+
+    if (String_1 == "Hello world from Xila") // Always true.
+    {
+        // ...
+    }
 ```
 
 ## 📚 API reference

@@ -11,7 +11,6 @@ Here you will find a full description of the `Communication` module.
 ```{toctree}
     :maxdepth: 1
 Communication/WiFi/WiFi
-Communication/Bluetooth/Bluetooth
 ```
 
 `Communication` is using the following types :

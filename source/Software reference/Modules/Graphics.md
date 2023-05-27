@@ -75,14 +75,9 @@ Graphics/Window
 Graphics/Dialog
 Graphics/File Explorer
 Graphics/Screen
+:::
 
-- `Dialog_Type`
-- `File_Explorer_Type`
-- `Screen_Type`
-- `Window_Type`
-
-
-These wrapper only contains a pointer to the LVGL objects. The widget is created and deleted by using `Create(...)` and `Delete()` methods (not created / deleted with wrapper constructor / destructor). The heritage of widget have been respected, and casting is possible (using the copy constructor from the base type `Object_Type`). The type is then  performed using the `Widget_Type::Class` (wrapper for `lv_class_t`).
+These wrapper only contains a pointer to the LVGL objects. The widget is created and deleted by using `Create(...)` and `Delete()` methods (not created / deleted with wrapper constructor / destructor). Then the widget can be used as usual (functions are almost the same as the original LVGL widget). The heritage of widget have been respected, and casting is possible (using the copy constructor from the base type `Object_Type`). The type is then  performed using the `Widget_Type::Class` (wrapper for `lv_class_t`).
 
 See [](<../Nomenclature.md>) for more information about the naming convention.
 

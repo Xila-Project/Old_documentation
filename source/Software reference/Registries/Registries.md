@@ -10,17 +10,7 @@ During startup, Xila checks and loads its various registers. If a registry is co
 
 Here you will find how to configure Xila in depth so that it can adapt to all your needs.
 
-Xila use registries to store its configuration.
-These registries have the `.xrf` extension and are contained in the `/Xila/Registry` folder.
-Thanks to JavaScript Object Notation (J.S.O.N.), these registries are quite easy to apprehend.
-
-During startup, Xila checks and loads its various registers.
-If a registry is corrupted, it will automatically reset with default values.
-If the registry is not corrupted, but the data in the registry is incorrect, you can still delete it.
-Xila will regenerate it automatically.
-
-Each registry begin with a `Registry` key.
-It allows you to know if the loaded register is indeed the one targeted.
+Each registry begin with a `Registry` key, which is the name of the registry.
 
 :::{warning}
 Be careful with the `System.xrf` registry. Because this one cannot be repaired automatically.
@@ -31,7 +21,7 @@ If a corruption occur, it is then necessary to manually replace the latter with 
 
 ### Display
 
-| 
+No registry for the moment.
 
 ### Keyboard
 
@@ -73,13 +63,11 @@ If a corruption occur, it is then necessary to manually replace the latter with 
 | `Access point` | `DHCP Lease Start IP Address` | Integer | -             |
 
 
-
-
 ### Power
 
 | Key                 | Type    | Default value                          |
 | ------------------- | ------- | -------------------------------------- |
-| `Registry`          | String  | `Power`                                |
+| `Registry`          | String  | `"Power"`                                |
 | `Battery`           | Object  | -                                      |
 | `Minimum Voltage`   | Integer | Xila_Default_Battery_Minimum_Voltage   |
 | `Maximum Voltage`   | Integer | Xila_Default_Battery_Maximum_Voltage   |
@@ -89,15 +77,15 @@ If a corruption occur, it is then necessary to manually replace the latter with 
 
 ### Sound
 
-.. csv-table::
-    :header-rows:   1
-    :file:          Registries/Sound.csv
+
 
 ### System
 
-.. csv-table::
-    :header-rows:   1
-    :file:          Registries/System.csv
-
+| Key               | Type    | Default value                |
+| ----------------- | ------- | ---------------------------- |
+| `Registry`        | String  | `System`                     |
+| `NTP Server`      | String  | Xila_Default_NTP_Server      |
+| `UTC offset`      | Integer | Xila_Default_Time_Offset     |
+| `Daylight offset` | Integer | Xila_Default_Daylight_Offset |
 
 

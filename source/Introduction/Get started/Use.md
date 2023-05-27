@@ -5,6 +5,7 @@ Here you will find how to get started with Xila hardware and software.
 ### ✅ Requirements
 
 - [Supported hardware](../../Hardware%20reference/Supported%20hardware.md).
+- An SD card.
 - [Visual Studio Code](https://code.visualstudio.com/) with [Platform IO IDE](https://platformio.org/install/ide?install=vscode) extension.
 - [Git](https://git-scm.com/downloads).
 
@@ -32,7 +33,8 @@ This operation can take a while since Platform IO have to download all the libra
 
 4. **Change** the **selected environment** to the one corresponding to your hardware.
 
+5. **Plug** your hardware to your computer and **upload** the code to it.
 
+6. **Connect** your SD card to your computer and **format** it to FAT32.
 
-
-
+7. **Copy** the content of the [Drive]() folder.

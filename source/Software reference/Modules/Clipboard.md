@@ -4,7 +4,7 @@ Here you will find a full description of the `Clipboard` module.
 
 ## 👓 Overview
 
-This module allows to copy and paste data between softwares.
+`Clipboard` allows to copy and paste data between softwares.
 
 :::{warning}
 Be careful, the clipboard is shared between all softwares and no check is done on the content. Never trust the clipboard content.

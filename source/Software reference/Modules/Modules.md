@@ -4,9 +4,7 @@ Here you will find a full description of module.
 
 ## 👓 Overview
 
-Xila has a modular architecture which means that each system part is a module.
-A module is a part of the system responsible for a specific task (hardware abstraction layer, management or complementary library).
-This way, it's easier to add new features and debug the system since it reduces coupling and polymorphism is used to make the system more flexible.
+Xila has a modular architecture which means that each system part is a module, responsible for a specific task (hardware abstraction layer, management or complementary library). This way, it's easier to add new features and debug the system since it reduces coupling and polymorphism is used to make the system more flexible.
 
 `Module_Type` is the base type that could be derived to create a module.
 
@@ -27,6 +25,7 @@ Flash
 Pin
 Graphics
 Keyboard
+Log
 Mathematics
 Memory
 Power

@@ -1,4 +1,4 @@
-# `Stream_Type`
+# 🌊 `Stream_Type`
 
 Here you will find a full description of the `Stream_Type`.
 

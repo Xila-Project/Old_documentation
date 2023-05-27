@@ -46,7 +46,6 @@ Pin/Two Wire
 .. doxygenvariable:: Xila_Namespace::Pin
 
 .. doxygentypedef:: Xila_Namespace::Pin_Type
-    :members:
 
 .. doxygenclass::   Xila_Namespace::Pin_Class
     :members:

@@ -60,6 +60,10 @@ Mathematics/Rational
 ## 📚 API reference
 
 ```{eval-rst}
+.. doxygenvariable::   Xila_Namespace::Mathematics
+
+.. doxygentypedef::    Xila_Namespace::Mathematics_Type
+
 .. doxygenclass::   Xila_Namespace::Mathematics_Class
     :members:
 ```

@@ -13,7 +13,7 @@ It depends on the `Drive` module.
 ```cpp
 ```
 
-## API reference
+## 📚 API reference
 
 ```{eval-rst}
 

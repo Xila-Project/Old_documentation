@@ -21,6 +21,7 @@ Xila provides a set of primitive types, which are defined in `Xila` namespace.
 | -------------------- | -------------------------- |
 | `Short_Natural_Type` | Half of the registers size |
 | `Natural_Type`       | Register size              |
+| `Size_Type`          | Register size              |
 | `Long_Natural_Type`  | Twice the register size    |
 
 :::{tip}
@@ -61,13 +62,13 @@ For example, on a 32-bit system, a `Float_Type` is a 4 byte floating point numbe
 
 ```cpp
     using namespace Xila;             // - - Import Xila namespace.
-    //
-    Boolean_Type My_Boolean = true;             // - - Create a boolean variable.
-    // -  
+    
+    // - Fixed size data types
     Byte_Type My_Byte = 0x01;                   // - - Create a byte variable.
     Word_Type My_Word = 0x0123;                 // - - Create a word variable.
     DWord_Type My_DWord = 0x012345;             // - - Create a double word variable.
     QWord_Type My_QWord = 0x0123456789ABCDEF;   // - - Create a quad word variable.
+    Boolean_Type My_Boolean = true;             // - - Create a boolean variable.
    
     // - Integer types
     Short_Type My_Short = 0x0001;               // - - Create a short variable.
