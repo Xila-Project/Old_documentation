@@ -2,14 +2,14 @@
 
 Here you will find how to get started with Xila hardware and software.
 
-### ✅ Requirements
+## ✅ Requirements
 
 - [Supported hardware](../../Hardware%20reference/Supported%20hardware.md).
 - An SD card.
 - [Visual Studio Code](https://code.visualstudio.com/) with [Platform IO IDE](https://platformio.org/install/ide?install=vscode) extension.
 - [Git](https://git-scm.com/downloads).
 
-### 📖 Steps
+## 📖 Steps
 
 1. **Clone** the xila repository :
 ```bash
