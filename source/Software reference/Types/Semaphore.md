@@ -10,11 +10,29 @@ For a more concise use, `Semaphore_Type` also offers the `Auto_Semaphore_Type`, 
 
 `Semaphore_Type` uses the following types :
 - `Semaphore_Type_Type`
+- `Auto_Semaphore_Type`
 
 ## 💡 Example
 
 ```cpp
+    using namespace Xila;
 
+    Semaphore_Type Semaphore;
+    if (Semaphore.Create(Semaphore_Type_Type::Recursive_Mutex) == Result_Type::Success)
+    {
+        Semaphore.Take();
+        // - Do something.
+        Semaphore.Give();
+        // - Do something.
+
+        // - Or use the Auto_Semaphore_Type.
+        {
+            Auto_Semaphore_Type Auto_Semaphore(Semaphore);
+            // - Do something.
+        }
+
+        Semaphore.Delete();
+    }
 ```
 
 

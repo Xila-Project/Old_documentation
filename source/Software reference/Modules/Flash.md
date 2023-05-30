@@ -2,6 +2,17 @@
 
 Here you will find a full description of the flash abstraction layer.
 
+## 👓 Overview
+
+`Flash` module is responsible for everything related to flash memory, such as reading, writing, erasing etc.
+
+## Types
+
+`Flash` is using the following types :
+
+- `Partition_Subtype_Type`
+- `Flash_Mode_Type`
+
 ## 💡 Example
 
 ```cpp
@@ -26,6 +37,8 @@ Here you will find a full description of the flash abstraction layer.
 ## 📚 API reference
 
 ```{eval-rst}
+.. doxygennamespace:: Xila_Namespace::Flash_Types
+
 .. doxygenvariable:: Xila_Namespace::Flash
 
 .. doxygentypedef:: Xila_Namespace::Flash_Type

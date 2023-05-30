@@ -37,4 +37,4 @@ This operation can take a while since Platform IO have to download all the libra
 
 6. **Connect** your SD card to your computer and **format** it to FAT32.
 
-7. **Copy** the content of the [Drive]() folder.
+7. **Copy** the content of the [Drive](https://github.com/Xila-Project/Code/tree/main/Drive) folder to the SD card.

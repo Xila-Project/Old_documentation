@@ -14,7 +14,9 @@ File manager/File manager
 Preferences/Preferences
 ```
 
-You can add softwares by using the the `Register_Handle` from [`Softwares`](<../Modules/Softwares.md>) module in the `main.cpp`.
+You can add softwares by using the `Register_Handle` from [`Softwares`](<../Modules/Softwares.md>) module in the `main.cpp`.
+
+See the [`Softwares`](<../Modules/Softwares.md>) module for more information.
 
 ## 💡 Example
 

@@ -12,7 +12,7 @@ By utilizing these tools, developers can rapidly prototype and deploy new produc
 
 ## 🏃 Getting started
 
-[Get started](Get started/Use) to use Xila.
+[Get started](<./Get started/Get started.md>) to use Xila.
 
 ## ➕ Key features
 

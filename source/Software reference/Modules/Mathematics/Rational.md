@@ -6,10 +6,6 @@ Here you will find a full description of the `Rational_Type`.
 
 `Rational_Type` is a class that represents a rational number. It's used by the `Mathematics` module.
 
-:::{note}
-`Rational_Type` is an alias of `Rational_Class` (used by the internals).
-:::
-
 ## 💡 Example
 
 ```cpp

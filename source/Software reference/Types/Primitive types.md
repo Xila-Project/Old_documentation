@@ -55,7 +55,7 @@ For example, on a 32-bit system, a `Float_Type` is a 4 byte floating point numbe
 
 | Type          | Size   | Description                                                                                  |
 | ------------- | ------ | -------------------------------------------------------------------------------------------- |
-| `Result_Type` | 1 byte | Used to return a result from a function : `Result_Type::Success`, `Result_Type::Error`, etc. |
+| `Result_Type` | 1 byte | Used to return a result : `Result_Type::Success`, `Result_Type::Error`, etc. |
 
 
 ## 💡 Example

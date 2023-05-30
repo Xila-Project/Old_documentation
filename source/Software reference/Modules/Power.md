@@ -1,10 +1,10 @@
 # 🔋 Power
 
-Here you will find a full description of the power abstraction layer.
+Here you will find a full description of the `Power` module.
 
 ## 👓 Overview
 
-Xila provides a power abstraction layer to simplify the use of power related operations and information.
+`Power` module is an abstraction layer to simplify the use of power related operations and information.
 
 ## 💡 Example
 
@@ -18,6 +18,10 @@ Xila provides a power abstraction layer to simplify the use of power related ope
 ## 📚 API reference
 
 ```{eval-rst}
+.. doxygenvariable:: Xila_Namespace::Power
+
+.. doxygentypedef::   Xila_Namespace::Power_Type
+
 .. doxygenclass::   Xila_Namespace::Power_Class
     :members:
 ```

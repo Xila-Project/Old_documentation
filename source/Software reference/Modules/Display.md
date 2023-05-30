@@ -13,12 +13,17 @@ This API rest upon the Nextion Library. For the full API, please visit the libra
 ```cpp
     using namespace Xila;
 
-    Xila.Display.Begin(921600, 16, 17); // -- Initialize communication with the screen to 921600 baud at pin 16 and 17.
-    Xila.Display.Set_Current_Page(39);  // -- Change page to 39.
-    Xila.Display.Draw_Rectangle(20, 40, 100, 200, 65535, false);    // -- Draws a filled rectangle at coordinates (20, 40) with a width of 100 and a length of 200.
-    Xila.Display.Set_Text("Text", "Hello World");   // -- Set "Hello World" text in Text object.
-    Xila.Display.Set_Brightness(50, false); // -- Set the brightness to half without saving it (display EEPROM).
-    Xila.Display.Sleep();   // -- Turn off the display.
+    Display.Set_Brightness(127); // - Set the display brightness to 50%.
+
+    Display.Set_Standby_Time(60); // - Set the display standby time to 1 minute.
+
+    auto Brightness = Display.Get_Brightness(); // - Get the display brightness.
+
+    auto Standby_Time = Display.Get_Standby_Time(); // - Get the display standby time.
+
+    auto Vertical_Definition = Display.Get_Vertical_Definition(); // - Get the display vertical definition.
+
+    auto Horizontal_Definition = Display.Get_Horizontal_Definition(); // - Get the display horizontal definition.
 ```
 
 ## 📚 API reference

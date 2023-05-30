@@ -4,10 +4,6 @@
 
 In order to simplify the use of dates and times, Xila has defined two types: `Date_Type` and `Time_Type`.
 
-:::{tip}
-    `Date_Type` is an alias of `Date_Class` and `Time_Type` is an alias of `Time_Class`.
-:::
-
 ## 💡 Example
 
 ```cpp

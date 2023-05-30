@@ -1,6 +1,6 @@
 # 📖 Syntax
 
-The Berry syntax is simple (similar to Python). Here you will find a fast description of the syntax. You can find the full documentation [here](https://berry.readthedocs.io/en/latest).
+The Berry syntax is simple (similar to Python). Here you will find a fast description of the syntax (extracted from the short user manual of Berry). You can find the full documentation [here](https://berry.readthedocs.io/en/latest).
 
 ## Comments
 

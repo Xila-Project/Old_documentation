@@ -8,6 +8,8 @@ Xila has a modular architecture which means that each system part is a module, r
 
 `Module_Type` is the base type that could be derived to create a module.
 
+All modules's types are stored in the `Xila_Namespace::<Module_Name>_Types` namespace.
+
 :::{note}
 `Software_Type` is also a child class of `Module_Type`.
 :::

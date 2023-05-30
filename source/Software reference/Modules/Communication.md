@@ -23,6 +23,10 @@ Communication/IP Address
 ## 📚 API reference
 
 ```{eval-rst}
+.. doxygenvariable:: Xila_Namespace::Communication
+
+.. doxygentypedef::   Xila_Namespace::Communication_Type
+
 .. doxygenclass::   Xila_Namespace::Communication_Class
     :members:
 ```

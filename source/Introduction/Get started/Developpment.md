@@ -23,6 +23,8 @@ code Code
 
 3. **Open** the project in `Platform IO` (`platformio.ini` file).
 
+4. **Change** the **selected environment** to the one corresponding to your hardware.
+
 ## 🍓 Berry software
 
 ### ✅ Requirements

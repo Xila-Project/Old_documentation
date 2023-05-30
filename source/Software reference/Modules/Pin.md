@@ -4,7 +4,7 @@ Here you will find a full description of the `Pin` module.
 
 ## 👓 Overview
 
-This module allows to easily use I/O pins and communication peripherals.
+`Pin` allows to easily use I/O pins and communication peripherals.
 
 ### Types
 
@@ -16,6 +16,10 @@ This module uses the following types :
 Pin/Serial
 Pin/Two Wire
 ```
+- `Digital_State_Type`
+- `Mode_Type`
+- `Interrupt_Mode_Type`
+
 
 ## 💡 Example
 
@@ -43,6 +47,12 @@ Pin/Two Wire
 ## 📚 API reference
 
 ```{eval-rst}
+.. doxygenenum:: Xila_Namespace::Pin_Types::Digital_State_Type
+
+.. doxygenenum:: Xila_Namespace::Pin_Types::Mode_Type
+
+.. doxygenenum:: Xila_Namespace::Pin_Types::Interrupt_Mode_Type
+
 .. doxygenvariable:: Xila_Namespace::Pin
 
 .. doxygentypedef:: Xila_Namespace::Pin_Type

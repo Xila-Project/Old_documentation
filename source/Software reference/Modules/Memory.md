@@ -9,6 +9,10 @@ Here you will find a full description of the `Memory` module.
 ## 📚 API reference
 
 ```{eval-rst}
+.. doxygenvariable:: Xila_Namespace::Memory
+
+.. doxygentypedef::   Xila_Namespace::Memory_Type
+
 .. doxygenclass::   Xila_Namespace::Memory_Class
     :members:
 ```

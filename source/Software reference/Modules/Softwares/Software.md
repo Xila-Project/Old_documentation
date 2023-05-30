@@ -10,10 +10,6 @@ Here you will find a full description of the `Software_Type`.
 Declaring variables and functions in the global scope should be **avoided** (except for `Software_Handle_Type`), unless you know what you are doing. Indeed, the global scope is **shared** between all instances of the software and using global scope could lead to unexpected behavior. In addition, using global scope will reduce the memory available for the whole system (since it's static memory). This also apply to static member variables and functions. That do not apply to `Berry` software, since it's using it's own memory space for each instance. 
 :::
 
-:::{note}
-`Software_Type` is an alias of `Software_Class` (used by the internals).
-:::
-
 ## 💡 Example
 
 ```cpp

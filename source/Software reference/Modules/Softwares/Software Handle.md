@@ -7,11 +7,7 @@ Here you will find a full description of the `Software_Handle_Type`.
 In order to manage software, `Softwares` modules uses `Software_Handle_Type`. The latter contains the basic information of the software in question (name and constructor call). It's also used to identify a software (see `Software_Type`). `Software_Handle_Type` is intended to be derived by the developer, in order to create a software handle for each software.
 
 :::{important}
-Software handle must be declared in the global scope to be registered by Xila. Indeed, the it's the software handle's constructor that register the handle. `static` class attributes do not work due to compiler optimization.
-:::
-
-:::{note}
-`Software_Handle_Type` is an alias of `Software_Handle_Class` (used by the internals).
+Software handle must be registered in by the `Softwares` module in order to be used (using `Softwares.Register_Handle` method).
 :::
 
 ## 💡 Example
@@ -21,20 +17,31 @@ Software handle must be declared in the global scope to be registered by Xila. I
 
     class My_Software_Class : public Software_Type
     {
-        
+    public:
+        static class My_Software_Handle_Class : public Software_Handle_Type
+        {
+        public:
+            My_Software_Handle_Class() : Software_Handle_Type("My software") {} // - Register the software handle.
+
+            void Create_Instance(const Accounts_Types::User_Type* Owner_User) const override // - Create a new instance of the software.
+            {
+                new My_Software_Class(Owner_User);
+            }
+        } My_Software_Handle;
+
         // ...
+        
+    private:
+
+        // ...
+
+        My_Software_Class();
+
+        // ...
+
+        friend class My_Software_Handle_Class; // - Allow the handle to access the software's constructor.
     };
 
-    static class My_Software_Handle_Class : public Software_Handle_Type
-    {
-    public:
-        My_Software_Handle_Class() : Software_Handle_Type("My software") {} // - Register the software handle.
-
-        Software_Type* Create_Instance()
-        {
-            return new My_Software_Class(); // - Return a new instance of the software.
-        }
-    } My_Software_Handle;
 ```
 
 ## 📚 API reference

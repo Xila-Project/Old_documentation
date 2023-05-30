@@ -9,10 +9,10 @@ It allows the developer to create complex graphic interface with ease.
 
 :::{warning}
 It is not recommended to use the LVGL API directly as it is not thread safe.
-The wrapper is designed to support concurrent execution using `Xila_Namespace::Semaphore_Type`.
+The wrapper is designed to support concurrent execution using [](<../Types/Semaphore.md>)
 :::
 
-It depends on the `Display` module.
+It depends on the [](<./Display.md>) module.
 
 ## 💡 Example
 
@@ -77,7 +77,7 @@ Graphics/File Explorer
 Graphics/Screen
 :::
 
-These wrapper only contains a pointer to the LVGL objects. The widget is created and deleted by using `Create(...)` and `Delete()` methods (not created / deleted with wrapper constructor / destructor). Then the widget can be used as usual (functions are almost the same as the original LVGL widget). The heritage of widget have been respected, and casting is possible (using the copy constructor from the base type `Object_Type`). The type is then  performed using the `Widget_Type::Class` (wrapper for `lv_class_t`).
+These wrapper only contains a pointer to the LVGL objects. The widget is created and deleted by using `Create(...)` and `Delete()` methods (not created / deleted with wrapper constructor / destructor). Then the widget can be used as usual (functions are almost the same as the original LVGL widget). The heritage of widget have been respected, and casting is possible (using the copy constructor from the base type `Object_Type`). The type checking is then performed using the `Widget_Type::Class` (wrapper for `lv_class_t`).
 
 See [](<../Nomenclature.md>) for more information about the naming convention.
 
