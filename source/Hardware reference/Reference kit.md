@@ -14,7 +14,49 @@ The purpose of the hardware reference kit is to provide a reference for the hard
 
 The overall cost of the kit is around 70€ (delivery not included).
 
-The repository contains all the files needed to build the kit can be found in the [Hardware](https://github.com/Xila-Project/Hardware) repository.
+The repository containing all the files needed to build the kit can be found in the [Hardware](https://github.com/Xila-Project/Hardware) repository.
+
+Here is the working principle of the kit:
+
+```{mermaid}
+stateDiagram
+    direction LR
+
+    WT32_SC01_Plus : WT32-SC01 Plus
+    External_IO : External IO connectors
+    Charge : Charge (TP4056)
+    Protection : Protection (DW01 and FS8205)
+    Power_Button : Power button
+    Latch : Latch (IRF5210)
+    USB : USB Connector
+    Regulation : Regulation (MT3608)
+
+    USB --> Charge : Power 
+
+    Charge --> Protection
+
+    Battery --> Protection
+
+    Protection --> Latch
+
+    Latch --> Regulation
+
+    Power_Button --> Latch : Enable
+
+    WT32_SC01_Plus --> Latch : Disable
+
+
+    Power_Button --> WT32_SC01_Plus : Is read
+
+    Battery --> WT32_SC01_Plus : Is read
+
+    USB --> WT32_SC01_Plus : Data
+    
+    Regulation --> WT32_SC01_Plus
+
+    WT32_SC01_Plus --> External_IO
+    WT32_SC01_Plus --> Speaker
+```
 
 ## Case
 
