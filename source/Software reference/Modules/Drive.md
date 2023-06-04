@@ -38,22 +38,22 @@ It uses the following types :
 
 
     Xila_Namespace::Drive_Class::Sd_Card_Type Card_Type = Xila.Drive.Type();    // -- Get card type.
-    uint64_t Card_Size = Xila.Drive.Size();     // -- Get card size.
-    uint64_t Available_Bytes = Xila.Drive.Total_Bytes();    // -- Get current partition available space.
-    uint64_t Used_Bytes = Xila.Drive.Used_Bytes();          // -- Get current partition used space.
+    uint64_t Card_Size = Xila.Drive.Get_Size();     // Get card size.
+    uint64_t Available_Bytes = Xila.Drive.Get_Total_Size();    // Get current partition available space.
+    uint64_t Used_Bytes = Xila.Drive.Get_Used_Size();          // Get current partition used space.
 
-    Xila.Drive.Make_Directory("/Folder");       // -- Create a new folder.
-    bool Exist = Xila.Drive.Exist("/Folder");   // -- Check if the folder was created.
+    Xila.Drive.Make_Directory("/Folder");       // Create a new folder.
+    bool Exist = Xila.Drive.Exist("/Folder");   // Check if the folder was created.
     if (Exist)
     {
-        Xila.Drive.Remove_Directory("/Folder"); // -- Delete "Folder".
+        Xila.Drive.Remove_Directory("/Folder"); // Delete "Folder".
     }
 
-    File New_File = Xila.Drive.Open("/File", FILE_WRITE);    // -- Open a file in write mode, if the file does not exist, it will be created automatically.
-    New_File.print("Hello World");              // -- Add "Hello World" into file.
-    New_File.close();                           // -- Close file.
-    Xila.Drive.Rename("/File", "/New_File");    // -- Rename "File" into "New_File".
-    Xila.Drive.Remove("/New_File");             // -- Delete "New_File".
+    File_Type New_File = Xila.Drive.Open("/File", true);    // Open a file in write mode, if the file does not exist, it will be created automatically.
+    New_File.Write_String("Hello World");              // Add "Hello World" into file.
+    New_File.Close();                           // Close file.
+    Xila.Drive.Rename("/File", "/New_File");    // Rename "File" into "New_File".
+    Xila.Drive.Remove("/New_File");             // Delete "New_File".
 ```
     
 ## 📚 API reference

@@ -9,7 +9,6 @@ Here you will find a full description of the `Serial_Type`.
 ## 📚 API reference
 
 ```{eval-rst}
-
 .. doxygentypedef:: Xila_Namespace::Pin_Types::Serial_Type
 
 .. doxygenclass::   Xila_Namespace::Pin_Types::Serial_Class

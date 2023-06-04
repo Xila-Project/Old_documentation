@@ -24,23 +24,30 @@ Pin/Two Wire
 ## 💡 Example
 
 ```cpp
+    using namespace Xila;
+    using namespace Pin_Types;
+
     void Interrupt_Handler()
     {
-        // -- Do stuff
+        // - Do stuff
     }
+
 
     void GPIO_Test()
     {
-        Xila.GPIO.Set_Mode(12, Xila.GPIO.Output);    // -- Set GPIO 5 as an output.
+        Pin.Set_Mode(12, Mode_Type::Output);    // Set pin 5 as an output.
 
-        Xila.GPIO.Digital_Write(12, Xila.GPIO.High);    // -- Set GPIO to an high state.
+        Pin.Digital_Write(12, Digital_State_Type::High);    // Set pin to an high state.
 
-        Xila.GPIO.Set_Mode(12, Xila.GPIO.Input_Pull_Up);    // -- Set GPIO 5 as an input with a pull resistor attached.
-        uint16_t State = Xila.GPIO.Digital_Read(12);        // -- Read GPIO digital state.
-        State = Xila.GPIO.Analog_Read(12);                  // -- Read GPIO analog state.
+        Pin.Set_Mode(12, Digital_State_Type::Input_Pull_Up);    // Set pin 5 as an input with a pull-up resistor attached.
 
-        Xila.GPIO.Attach_Interrupt(12, Interrupt_Handler, Xila.GPIO.Rising);   // -- Attach an the Interrupt_Handler() function to the pin twelve when the pin signal rise.
-        Xila.GPIO.Detach_Interrupt(12); // -- Disable interrupt on pin 12.
+        uint16_t State = Pin.Digital_Read(12);        // Read pin digital state.
+
+        State = Pin.Analog_Read(12);                  // Read pin analog state.
+
+        Pin.Attach_Interrupt(12, Interrupt_Handler, Interrupt_Mode_Type::Rising);   // Attach an interrupt function to the pin 12 when the pin signal rise.
+
+        Pin.Detach_Interrupt(12); // Disable interrupt on pin 12.
     }
 ```
 
