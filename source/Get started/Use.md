@@ -15,7 +15,7 @@ Here you will find how to get started with Xila hardware and software.
 ```bash
 git clone https://github.com/Xila-Project/Code --recurse-submodules
 ```
-:::{tip}
+:::{note}
 This operation can take a while since Git have to download all of the submodules.
 :::
 
@@ -27,7 +27,7 @@ code Xila
 
 3. **Open** `Platform IO` and open the `Code` folder as a project.
 
-:::{tip}
+:::{note}
 This operation can take a while since Platform IO have to download all the libraries. 
 :::
 

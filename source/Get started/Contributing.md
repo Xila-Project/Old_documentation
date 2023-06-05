@@ -18,7 +18,7 @@ Here you will find how to get started to contribute to Xila.
 ```bash
 git clone <URL of the forked repository> --recurse-submodule
 ```
-:::{tip}
+:::{note}
 This operation can take a while since Git have to download all of the submodules.
 :::
 
@@ -29,7 +29,7 @@ code Xila
 
 4. **Open** `Platform IO` and open the `Code` folder as a project.
 
-:::{tip}
+:::{note}
 This operation can take a while since Platform IO have to download all the libraries. 
 :::
 
@@ -66,7 +66,7 @@ pip install -r /path/to/Documentation/requirements.txt
 ```bash
 git clone <URL of the forked repository> --recurse-submodule
 ```
-:::{tip}
+:::{note}
 This operation can take a while since Git have to download all of the submodules.
 :::
 
