@@ -4,17 +4,20 @@
 
 Here are dependencies of the project :
 
-- [Arduino framework for ESP32](https://github.com/espressif/arduino-esp32) - [Espressif](https://github.com/espressif/)
-- [PS2Keyboard](https://github.com/PaulStoffregen/PS2Keyboard) - [Paul STOFFREGEN](https://github.com/PaulStoffregen/)
-- [ArduinoJson](https://github.com/bblanchon/ArduinoJson) - [Benoît BLANCHON](https://github.com/bblanchon/)
-- [StreamUtils](https://github.com/bblanchon/ArduinoStreamUtils) - [Benoît BLANCHON](https://github.com/bblanchon/)
-- [Periodic Table JSON](https://github.com/Bowserinator/Periodic-Table-JSON) - [Bowserinator](https://github.com/Bowserinator/)
-- [Battery library](https://github.com/AlixANNERAUD/Battery-Library) - [Alix ANNERAUD](https://github.com/AlixANNERAUD/)
-- [Berry](https://github.com/berry-lang/berry)
-- [LVGL](https://lvgl.io)
-- [Unity](http://www.throwtheswitch.org/unity) - [Throw The Switch](http://www.throwtheswitch.org/)
-- [FreeRTOS](https://www.freertos.org/)
-- [Lovyan GFX](https://github.com/lovyan03/LovyanGFX)
+| Name                                                                       | Author                                                                                 | Comment                      |
+| -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ---------------------------- |
+| [Arduino framework for ESP32](https://github.com/espressif/arduino-esp32)  | [Espressif](https://github.com/espressif/)                                             | Main abstraction layer       |
+| [PS2Keyboard](https://github.com/PaulStoffregen/PS2Keyboard)               | [Paul STOFFREGEN](https://github.com/PaulStoffregen/)                                  | Used by the keyboard drivers |
+| [ArduinoJson](https://github.com/bblanchon/ArduinoJson)                    | [Benoît BLANCHON](https://github.com/bblanchon/)                                       | Used to store registries     |
+| [StreamUtils](https://github.com/bblanchon/ArduinoStreamUtils)             | [Benoît BLANCHON](https://github.com/bblanchon/)                                       |                              |
+| [Periodic Table JSON](https://github.com/Bowserinator/Periodic-Table-JSON) | [Bowserinator](https://github.com/Bowserinator/)                                       |                              |
+| [Battery library](https://github.com/AlixANNERAUD/Battery-Library)         | [Alix ANNERAUD](https://github.com/AlixANNERAUD/)                                      | Used by the power drivers    |
+| [Berry](https://github.com/berry-lang/berry)                               | [Wenliang](https://github.com/skiars) and [S. HADINGER](https://github.com/s-hadinger) | Supported language           |
+| [LVGL](https://lvgl.io)                                                    |                                                                                        | UI framework                 |
+| [Unity](http://www.throwtheswitch.org/unity)                               | [Throw The Switch](http://www.throwtheswitch.org/)                                     | Unit testing                 |
+| [FreeRTOS](https://www.freertos.org/)                                      | Amazon, [Richar BARRY](https://github.com/RichardBarry) and FreeRTOS Team              | Multitasking kernel          |
+| [Lovyan GFX](https://github.com/lovyan03/LovyanGFX)                        | [Lovyan03](https://github.com/lovyan03)                                                | Used by display drivers      |
+| [Arduino GFX]()                                                            | [Moononournation](https://github.com/moononournation)                                  | Used by display drivers      |
   
 ## 🎶 Resources
 
