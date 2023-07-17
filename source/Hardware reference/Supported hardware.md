@@ -19,3 +19,4 @@ See the [Hardware reference](./Reference%20kit.md) for more information about th
 
 - [Wireless-Tag WT32-SC01](http://www.wireless-tag.com/portfolio/wt32-sc01/)
 - [Wireless-Tag WT32-SC01-Plus](https://www.wirelesstag.net/products/wt32-sc01-plus)
+- [Suton ESP32-8048S070](https://fr.aliexpress.com/item/1005004952726089.html)
